@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     {{-- navbar start --}}
     <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
         <div class="container">
@@ -55,7 +54,7 @@
     {{-- navbar end --}}
 
     {{-- hero start --}}
-    <section id="hero">
+    <section id="hero" class="py-5">
         <div class="container text-center text-white">
             <div class="hero-tittle">
                 <h1 class="hero-text">Selamat Datang <br> Di Pesantren Nurun Nuha</h1>
@@ -65,7 +64,7 @@
     </section>
     {{-- hero end --}}
     {{-- card start --}}
-    <section id="program" style="margin-top:-30px ">
+    <section id="program" style="margin-top:-30px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -111,7 +110,7 @@
     {{-- card end --}}
 
     {{-- start berita --}}
-    <section id='berita'>
+    <section id='berita' class="py-5">
         {{-- py-5 digunakan untuk mengantur padding pada sumbu y --}}
         <div class="container py-5">
             <div class="header-berita text-center mb-5">
@@ -166,9 +165,79 @@
     {{-- end berita --}}
 
     {{-- Start Join --}}
+    <section id="join" class="py-5">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="stripe me-2"></div>
+                        <h5>Daftar Santri</h5>
+                    </div>
+                    <h1 class="fw-bold mb-2">Gabung bersama kami, mewujudkan generasi rabbani</h1>
+                    <p class="mb-3">Pesantren Nurun Nuha merupakan pesantren yang berada di kota malang,
+                        mengintegrasikan ilmu agama dan umum sehingga akan menjadi penerus bangsa yang hebat dan teguh
+                    </p>
+                    <button class="btn btn-outline-danger">Register</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{{ asset('assets/images/il-berita-02.png') }}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
 
+    </section>
     {{-- End Join --}}
+    {{-- Video --}}
+    <section id="video" class="py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    {{-- end video --}}
 
+    {{-- List Video --}}
+    <section id="video_youtube" class="py-5">
+        <div class="container py-5">
+            <div class="header-berita text-center">
+                <h2 class="fw-bold">Video Kegiatan Pesantren</h2>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-4">
+                    <iframe width="100%" height="215"
+                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4">
+                    <iframe width="100%" height="215"
+                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4">
+                    <iframe width="100%" height="215"
+                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="footer-berita text-center py-3">
+                <a href="" class="btn btn-outline-danger">
+                    Lihat Video Selengkapnya
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+    {{-- end List Video --}}
 
 
     {{-- bootstrap --}}

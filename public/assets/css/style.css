@@ -60,5 +60,20 @@ body {
     font-weight: 500;
 }
 
+.stripe{
+    height: 5px;
+    width: 40px;
+    background-color: #bd0001;
+}
+
+#video{
+    background-image: url(../../assets/images/il-bg-video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+}
+
 /* untuk navbar berubah ketika di scroll ke bawah */
 
