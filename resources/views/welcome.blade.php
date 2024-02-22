@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,7 +58,7 @@
     {{-- hero start --}}
     <section id="hero" class="py-5">
         <div class="container text-center text-white">
-            <div class="hero-tittle">
+            <div class="hero-tittle" data-aos="fade-up">
                 <h1 class="hero-text">Selamat Datang <br> Di Pesantren Nurun Nuha</h1>
                 <h4>Pondok Pesantren Modern dengan Konsep rahmatan lil alamin</h4>
             </div>
@@ -66,10 +67,10 @@
     {{-- hero end --}}
     {{-- card start --}}
     <section id="program" style="margin-top:-30px">
-        <div class="container">
+        <div class="container col-xxl-9">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+                <div class="col-lg-3 col-md-6 col mb-2" data-aos="flip-left">
+                    <div class="bg-white rounded-3 shadow p-3 mb-2 d-flex justify-content-between align-items-center">
                         <div>
                             <h5>Pendidikan <br> Berkualitas</h5>
                         </div>
@@ -77,8 +78,8 @@
                             alt="">
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+                <div class="col-lg-3 col-md-6 col mb-2" data-aos="flip-left">
+                    <div class="bg-white rounded-3 shadow p-3 mb-2 d-flex justify-content-between align-items-center">
                         <div>
                             <h5>Pendidikan <br> Berakhlaq</h5>
                         </div>
@@ -86,8 +87,8 @@
                             alt="">
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+                <div class="col-lg-3 col-md-6 col mb-2" data-aos="flip-left">
+                    <div class="bg-white rounded-3 shadow p-3 mb-2 d-flex justify-content-between align-items-center">
                         <div>
                             <h5>Pendidikan <br> Muamalah</h5>
                         </div>
@@ -95,8 +96,8 @@
                             alt="">
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+                <div class="col-lg-3 col-md-6 col mb-2" data-aos="flip-left">
+                    <div class="bg-white rounded-3 shadow p-3 mb-2 d-flex justify-content-between align-items-center">
                         <div>
                             <h5>Pendidikan <br> Teknologi</h5>
                         </div>
@@ -113,11 +114,11 @@
     {{-- start berita --}}
     <section id='berita' class="py-5">
         {{-- py-5 digunakan untuk mengantur padding pada sumbu y --}}
-        <div class="container py-5">
+        <div class="container ">
             <div class="header-berita text-center mb-5">
                 <h2 class="fw-bold">Berita Kegiatan Pondok Pesantren</h2>
             </div>
-            <div class="row">
+            <div class="row py-5" data-aos="flip-up">
                 <div class="col-lg-4">
                     <div class="card border-0">
                         <img src="{{ asset('assets/images/il-berita-01.png') }}" class="card-img-fluid" alt="...">
@@ -166,7 +167,7 @@
     {{-- end berita --}}
 
     {{-- Start Join --}}
-    <section id="join" class="py-5">
+    <section id="join" class="py-5" data-aos="flip-down">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6">
@@ -189,21 +190,23 @@
     </section>
     {{-- End Join --}}
     {{-- Video --}}
-    <section id="video" class="py-5">
-        <div class="container py-5">
+    {{-- <section id="video" class="py-5">
+        <div class="container-fluid py-5">
             <div class="text-center">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     {{-- end video --}}
 
     {{-- List Video --}}
-    <section id="video_youtube" class="py-5">
+    <section id="video_youtube" class="py-5" data-aos="zoom-in">
         <div class="container py-5">
             <div class="header-berita text-center">
                 <h2 class="fw-bold">Video Kegiatan Pesantren</h2>
@@ -211,37 +214,37 @@
             <div class="row py-5">
                 <div class="col-lg-4">
                     <iframe width="100%" height="215"
-                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                        src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-4">
                     <iframe width="100%" height="215"
-                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                        src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-4">
                     <iframe width="100%" height="215"
-                    src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                        src="https://www.youtube.com/embed/yzVbC6W9cMI?si=dWVNMIopfidFCyCN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="footer-berita text-center py-3">
-                <a href="" class="btn btn-outline-danger">
-                    Lihat Video Selengkapnya
-                </a>
-            </div>
+                    <a href="" class="btn btn-outline-danger">
+                        Lihat Video Selengkapnya
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     {{-- end List Video --}}
 
     {{-- Start Foto Parallax --}}
-    <section id="foto" class="section-foto parallax">
+    <section id="foto" class="section-foto parallax" data-aos="zoom-in-up">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-5">
                 <div class="d-flex align-items-center">
@@ -254,16 +257,16 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-6">
-                    <img src="{{asset('assets/images/il-photo-01.png')}}" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/images/il-photo-01.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <img src="{{asset('assets/images/il-photo-02.png')}}" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/images/il-photo-02.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <img src="{{asset('assets/images/il-photo-03.png')}}" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/images/il-photo-03.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <img src="{{asset('assets/images/il-photo-04.png')}}" class="img-fluid" alt="">
+                    <img src="{{ asset('assets/images/il-photo-04.png') }}" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -272,22 +275,22 @@
     {{-- End Foto Parallax --}}
 
     {{-- Fasilitas --}}
-         {{-- <section id="fasilitas">
+    {{-- <section id="fasilitas">
             <div class="container py-5">
                 <div class="text-center mb-5">
                     <h3 class="fw-bold">Fasilitas Pesantren</h3>
                 </div>
-                <img src="{{ asset('assets/images/fasilitas.jpeg')}}" class="img-fluid" alt="">
+      //          <img src="" class="img-fluid" alt="">
             </div>
          </section> --}}
     {{-- end Fasilitas --}}
 
     {{-- footer --}}
-    <section id="footer" class="bg-white">
+    <section id="footer" class="bg-white" data-aos="zoom-out">
         <div class="container py-5">
             <footer>
                 <div class="row">
-                    {{-- Kolom 1 --}}
+                    {{-- Kolom 1 Navigasi --}}
                     <div class="col-12 col-md-3 mb-3">
                         <h5 class="fw-bold mb-3">Navigasi</h5>
                         <div class="d-flex">
@@ -321,12 +324,75 @@
                             </ul>
                         </div>
                     </div>
+
+                    {{-- Kolom 2 Media Sosial  --}}
+                    <div class="col-12 col-md-3 mb-3">
+                        <h5 class="font-inter fw-bold mb-3">Follow Kami</h5>
+                        <div class="d-flex mb-3">
+                            <a href="" target="_blank" class="text-decoration-none text-dark">
+                                <img src="{{ asset('assets/images/ig.png') }}" alt="" height="30"
+                                    width="30" class="me-4">
+                            </a>
+                            <a href="" target="_blank" class="text-decoration-none text-dark">
+                                <img src="{{ asset('assets/images/yutub.png') }}" alt="" height="30"
+                                    width="30" class="me-4">
+                            </a>
+                            <a href="" target="_blank" class="text-decoration-none text-dark">
+                                <img src="{{ asset('assets/images/fb.png') }}" alt="" height="30"
+                                    width="30" class="me-4">
+                            </a>
+                            <a href="" target="_blank" class="text-decoration-none text-dark">
+                                <img src="{{ asset('assets/images/tiktok.png') }}" alt="" height="30"
+                                    width="30" class="me-4">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    {{-- Kolom 3 Kontak --}}
+
+                    <div class="col-12 col-md-3 mb-3">
+                        <h5 class="font-inter fw-bold mb-3">Kontak Kami</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-muted">masjidnurunnuha@gmail.com</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Bapak Edi
+                                    Prasodjo</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-muted">081249180099</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link p-0 text-muted">0213199182</a></li>
+                        </ul>
+                    </div>
+
+                    {{-- Kolom 4 Alamat --}}
+                    <div class="col-12 col-md-3 mb-3">
+                        <h5 class="font-inter fw-bold mb-3">Sekolah</h5>
+                        <p>Jl Saxophone Masjid Nurun Nuha Perumahan Bumi Palapa</p>
+                    </div>
                 </div>
             </footer>
         </div>
     </section>
-
     {{-- end footer --}}
+
+    {{-- Bawahnya footer --}}
+    <section class="bg-light border-top" data-aos="zoom-out">
+        <div class="container py-4">
+            <div class="d-flex justify-content-between">
+                <div>
+                    Pesantren Nurun Nuha
+                </div>
+                <div class="d-flex">
+                    <p class="me-4">Syarat & Ketentuan</p>
+                    <p>
+                        <a href="/kebijakan" class="text-decoration-none text-dark">Kebijakan Privacy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     {{-- bootstrap --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -346,6 +412,10 @@
                 navbar.classList.toggle("navbar-dark", true);
             }
         };
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

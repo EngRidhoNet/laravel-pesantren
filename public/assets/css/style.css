@@ -1,11 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
     font-family: "Poppins", sans-serif;
 }
 /* Button */
-.btn-danger{
+.btn-danger {
     background-color: #ff0000;
     border-color: #ff0000;
     color: #fff;
@@ -16,7 +15,7 @@ body {
     transition: 0.3s;
 }
 
-.btn-outline-danger{
+.btn-outline-danger {
     background-color: transparent;
     border-color: #ff0000;
     color: #bd0001;
@@ -27,21 +26,21 @@ body {
     transition: 0.3s;
 }
 /* Navbar */
-.nav-item .nav-link{
+.nav-item .nav-link {
     font-size: 18px;
-    margin-left : 5px;
+    margin-left: 5px;
     margin-right: 5px;
-
 }
-.scroll-nav-active{
+.scroll-nav-active {
     background-color: #fff;
-    border-bottom:1px solid #bd0001;
+    /* border-bottom:1px solid #bd0001; */
+    box-shadow: 1px 1px 11px -1px rgba(1, 1, 1, 0.08);
 }
-.text-nav-active{
+.text-nav-active {
     color: black;
 }
 
-#hero{
+#hero {
     background: url(../images/bg-hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,22 +50,19 @@ body {
     /* padding: 200px 0; */
 }
 
-.hero-tittle{
+.hero-tittle {
     padding-top: 200px;
 }
 
-.hero-text{
-    font-size: 65px;
-    font-weight: 500;
-}
 
-.stripe{
+
+.stripe {
     height: 5px;
     width: 40px;
     background-color: #bd0001;
 }
 
-#video{
+#video {
     background-image: url(../../assets/images/il-bg-video.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +70,7 @@ body {
     height: 500px;
 }
 
-.section-foto{
+.section-foto {
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -86,15 +82,33 @@ body {
     align-items: center;
 }
 
-.parallax{
+.parallax {
     background-image: url("../../assets/images/il-bg-foto.jpeg");
 }
 
-.stripe-putih{
+.stripe-putih {
     height: 5px;
     width: 40px;
     background-color: #ffffff;
 }
 
-/* untuk navbar berubah ketika di scroll ke bawah */
+/* Responsive layar kecil */
 
+@media screen and (min-width: 450px) {
+    .hero-text {
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 550px) {
+    .hero-text {
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 800px) {
+    .hero-text {
+        font-size: 65px;
+        font-weight: 500;
+    }
+}
